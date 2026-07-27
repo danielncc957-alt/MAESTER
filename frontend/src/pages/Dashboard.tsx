@@ -1,57 +1,34 @@
-import StatCard from "../components/ui/StatCard";
-import RecentProjects from "../components/project/RecentProjects";
-
-import {
-  FolderKanban,
-  Cpu,
-  Brain,
-  Activity,
-} from "lucide-react";
+import StatusStrip from "../components/dashboard/StatusStrip";
+import CurrentProject from "../components/dashboard/CurrentProject";
+import WorkspacePanel from "../components/dashboard/WorkspacePanel";
+import ReasoningPipeline from "../components/dashboard/ReasoningPipeline";
 
 export default function Dashboard() {
   return (
     <div>
-      {/* Heading */}
+      {/* Welcome */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-white">
-          Good Afternoon 👋
+        <h1 className="text-4xl font-bold text-white">
+          Mission Control
         </h1>
 
         <p className="mt-2 text-zinc-400">
-          Continue building intelligent embedded systems with AI.
+          Monitor devices, build firmware and let MIMIR reason across your entire embedded project.
         </p>
       </div>
 
-      {/* Stat Cards */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-        <StatCard
-          title="Projects"
-          value={0}
-          icon={<FolderKanban size={28} />}
-        />
+      {/* Live Status */}
+      <StatusStrip />
 
-        <StatCard
-          title="ESP32 Devices"
-          value={0}
-          icon={<Cpu size={28} />}
-        />
-
-        <StatCard
-          title="AI Chats"
-          value={0}
-          icon={<Brain size={28} />}
-        />
-
-        <StatCard
-          title="Diagnostics"
-          value={0}
-          icon={<Activity size={28} />}
-        />
+      {/* Main Workspace */}
+      <div className="mt-8 grid gap-6 xl:grid-cols-2">
+        <CurrentProject />
+        <WorkspacePanel />
       </div>
 
-      {/* Recent Projects */}
+      {/* Reasoning */}
       <div className="mt-8">
-        <RecentProjects />
+        <ReasoningPipeline />
       </div>
     </div>
   );

@@ -1,8 +1,13 @@
-import Dashboard from "../pages/Dashboard";
 import Sidebar from "../components/layout/Sidebar";
 import Navbar from "../components/layout/Navbar";
 
-export default function DashboardLayout() {
+interface DashboardLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function DashboardLayout({
+  children,
+}: DashboardLayoutProps) {
   return (
     <div className="flex min-h-screen bg-zinc-950">
       <Sidebar />
@@ -10,8 +15,8 @@ export default function DashboardLayout() {
       <div className="flex flex-1 flex-col">
         <Navbar />
 
-        <main className="flex-1 p-8">
-          <Dashboard />
+        <main className="flex-1 overflow-y-auto p-8 text-white">
+          {children}
         </main>
       </div>
     </div>

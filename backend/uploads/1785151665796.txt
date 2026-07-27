@@ -1,0 +1,63 @@
+######################################################################
+       CASIO USB MIDI Driver (Version 1.2) for Windows 7/8/8.1 64bit
+              (C) 2004-2014 CASIO COMPUTER CO., LTD.
+       Company and product names used herein are trademarks of
+                     their respective owners. 
+######################################################################
+
+
+This document explains how to install the USB driver required to transfer
+MIDI data between an instrument that supports USB connections and a
+computer.Installation of the USB driver is available for the model that 
+comes with the CD-ROM. Use the following instructions to install the USB 
+driver on your computer.
+
+
+* Supported Operating Systems
+
+Windows 8.1 (64bit)
+Windows 8 (64bit)
+Windows 7 (64bit)
+
+* To Install the USB driver
+
+1. Log on to Windows using a computer administrator account. See the
+documentation that comes with Windows for information
+about computer administrators.
+
+2. Confirm that the instrument is not connected to the PC and is turned off.
+
+3. Open the "CCUSBX64_INST" folder and double-click "dpinst.exe".
+
+(In response to the confirmation dialog box "Do you want to allow
+the following program from an unknown publisher to make changes to this
+computer?" appears on your computer, click "Yes.")
+
+4. When the message "Welcome to the Device Driver Installation Wizard!" appears, click
+"Next."
+
+5. When the message "Would you like to install this device software?" appears,
+click "Install" and wait until the message "Completing the Device Driver Installation Wizard" appears.
+
+Click "Finish."
+
+6. Connect the instrument to the computer with the USB cable and turn on
+the instrument. Check to make sure that the "Installing device driver
+software" message is displayed near the task tray (normally in the lower
+right corner of your computer screen). When the message changes to
+"CASIO USB MIDI", the USB driver is installed completely.
+When the instrument is connected to any USB port, the USB driver will be
+initialized automatically.
+
+* To Uninstall the USB driver
+
+1. Click [Start] -> [Control Panel] -> [Uninstall a program].
+
+2. Check the installed program list and double-click "Windows Driver Package - 
+CASIO COMPUTER CO.,LTD. (CCUSBMIDI) MEDIA."
+
+3. When the message "Uninstall Driver Package (All devices using this
+driver will be removed. Do you wish to continue?)"appears, click "Yes,"
+and wait until uninstallation of the driver is complete.
+
+4. Restart Windows.
