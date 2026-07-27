@@ -1,4 +1,6 @@
 import StatCard from "../components/ui/StatCard";
+import RecentProjects from "../components/project/RecentProjects";
+
 import {
   FolderKanban,
   Cpu,
@@ -22,7 +24,6 @@ export default function Dashboard() {
 
       {/* Stat Cards */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-
         <StatCard
           title="Projects"
           value={0}
@@ -46,7 +47,11 @@ export default function Dashboard() {
           value={0}
           icon={<Activity size={28} />}
         />
+      </div>
 
+      {/* Recent Projects */}
+      <div className="mt-8">
+        <RecentProjects />
       </div>
     </div>
   );
